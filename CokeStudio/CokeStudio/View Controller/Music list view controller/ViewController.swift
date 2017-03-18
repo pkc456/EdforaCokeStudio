@@ -58,6 +58,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
 // MARK: - Table view data source
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90.0
+    }
+    
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var numberOfRow = 0
         if tableView == tableViewSongs {

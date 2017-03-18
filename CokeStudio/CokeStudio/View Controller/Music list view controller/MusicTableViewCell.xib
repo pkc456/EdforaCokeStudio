@@ -10,26 +10,53 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicTableViewCell" id="0u4-Rr-wsF" customClass="MusicTableViewCell" customModule="CokeStudio" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicTableViewCell" rowHeight="90" id="0u4-Rr-wsF" customClass="MusicTableViewCell" customModule="CokeStudio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0u4-Rr-wsF" id="6aQ-WH-UKs">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IP-EQ-YNh">
-                        <rect key="frame" x="39" y="11" width="298" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="Ejs-sk-85i">
+                        <rect key="frame" x="0.0" y="0.0" width="88" height="87.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="Reu-vS-ufR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmM-Qn-4NC">
+                        <rect key="frame" x="96" y="37" width="271" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labe" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IP-EQ-YNh">
+                        <rect key="frame" x="96" y="8" width="271" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="Ejs-sk-85i" firstAttribute="leading" secondItem="6aQ-WH-UKs" secondAttribute="leading" id="4nH-yl-lDh"/>
+                    <constraint firstItem="UmM-Qn-4NC" firstAttribute="top" secondItem="3IP-EQ-YNh" secondAttribute="bottom" constant="8" id="8RF-J6-Oye"/>
+                    <constraint firstItem="Ejs-sk-85i" firstAttribute="top" secondItem="6aQ-WH-UKs" secondAttribute="top" id="FLc-bU-mhd"/>
+                    <constraint firstAttribute="bottom" secondItem="Ejs-sk-85i" secondAttribute="bottom" constant="2" id="TsE-T2-Y9v"/>
+                    <constraint firstAttribute="trailing" secondItem="UmM-Qn-4NC" secondAttribute="trailing" constant="8" id="Ufo-zV-c2q"/>
+                    <constraint firstItem="3IP-EQ-YNh" firstAttribute="leading" secondItem="Ejs-sk-85i" secondAttribute="trailing" constant="8" id="nGI-36-P5q"/>
+                    <constraint firstItem="3IP-EQ-YNh" firstAttribute="top" secondItem="6aQ-WH-UKs" secondAttribute="top" constant="8" id="rBp-b1-6Wj"/>
+                    <constraint firstAttribute="trailing" secondItem="3IP-EQ-YNh" secondAttribute="trailing" constant="8" id="w8u-Ll-BRL"/>
+                    <constraint firstItem="UmM-Qn-4NC" firstAttribute="leading" secondItem="3IP-EQ-YNh" secondAttribute="leading" id="wgo-Gr-pOj"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="imageViewCover" destination="Ejs-sk-85i" id="DdB-O3-TNP"/>
+                <outlet property="labelArtistName" destination="UmM-Qn-4NC" id="fs2-0X-uzH"/>
                 <outlet property="labelMusicName" destination="3IP-EQ-YNh" id="iba-Bo-EXQ"/>
             </connections>
-            <point key="canvasLocation" x="111.5" y="59"/>
+            <point key="canvasLocation" x="111.5" y="82"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="thumbnail" width="200" height="158"/>
+    </resources>
 </document>

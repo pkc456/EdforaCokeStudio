@@ -8,10 +8,13 @@
 
 import Foundation
 import UIKit
+import AlamofireImage
 
 class MusicTableViewCell: UITableViewCell {
     
     @IBOutlet weak var labelMusicName: UILabel!
+    @IBOutlet weak var labelArtistName: UILabel!
+    @IBOutlet weak var imageViewCover: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +24,10 @@ class MusicTableViewCell: UITableViewCell {
     func configureCellWithData(musicInformationModelObject : MusicInformation)
     {        
         labelMusicName.text = musicInformationModelObject.song
+        labelArtistName.text = musicInformationModelObject.artists
+        
+        let url: NSURL = NSURL(string: musicInformationModelObject.cover_image!)!
+        imageViewCover.af_setImage(withURL: url as URL)        
     }
     
 }

@@ -7,5 +7,6 @@ target 'CokeStudio' do
 
   # Pods for CokeStudio
     pod 'Alamofire', '~> 4.0'
+    pod 'AlamofireImage'
 
 end
