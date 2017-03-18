@@ -19,6 +19,7 @@
 		D44C6F2B1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */; };
 		D44C6F2F1E7D2BF200B4CC9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F2E1E7D2BF200B4CC9C /* ViewController.swift */; };
 		D44C6F311E7D2C0100B4CC9C /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F301E7D2C0100B4CC9C /* MusicTableViewCell.swift */; };
+		D44C6F331E7D398200B4CC9C /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D44C6F321E7D398200B4CC9C /* MusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInformationBusinessLayer.swift; sourceTree = "<group>"; };
 		D44C6F2E1E7D2BF200B4CC9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D44C6F301E7D2C0100B4CC9C /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		D44C6F321E7D398200B4CC9C /* MusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				D44C6F2E1E7D2BF200B4CC9C /* ViewController.swift */,
 				D44C6F301E7D2C0100B4CC9C /* MusicTableViewCell.swift */,
+				D44C6F321E7D398200B4CC9C /* MusicTableViewCell.xib */,
 			);
 			path = "Music list view controller";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				D44C6F151E7D225700B4CC9C /* LaunchScreen.storyboard in Resources */,
 				D44C6F121E7D225700B4CC9C /* Assets.xcassets in Resources */,
 				D44C6F101E7D225700B4CC9C /* Main.storyboard in Resources */,
+				D44C6F331E7D398200B4CC9C /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

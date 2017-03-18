@@ -73,7 +73,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="mXL-n5-8QW">
+                <searchDisplayController searchResultsTitle="" id="mXL-n5-8QW">
                     <connections>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="tPv-al-JlL"/>
                         <outlet property="searchBar" destination="Ugh-6z-C83" id="rkh-VI-1ny"/>

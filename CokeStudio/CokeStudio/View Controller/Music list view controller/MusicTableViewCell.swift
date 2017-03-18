@@ -19,7 +19,7 @@ class MusicTableViewCell: UITableViewCell {
     
     
     func configureCellWithData(musicInformationModelObject : MusicInformation)
-    {
+    {        
         labelMusicName.text = musicInformationModelObject.song
     }
     
