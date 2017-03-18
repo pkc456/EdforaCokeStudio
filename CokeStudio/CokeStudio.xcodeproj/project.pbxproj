@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A95BCF7BD624E9A97A9EA06 /* Pods_CokeStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F2BAECF13AF5E3EAEA58A3 /* Pods_CokeStudio.framework */; };
 		D44C6F0B1E7D225700B4CC9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F0A1E7D225700B4CC9C /* AppDelegate.swift */; };
-		D44C6F0D1E7D225700B4CC9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F0C1E7D225700B4CC9C /* ViewController.swift */; };
 		D44C6F101E7D225700B4CC9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44C6F0E1E7D225700B4CC9C /* Main.storyboard */; };
 		D44C6F121E7D225700B4CC9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44C6F111E7D225700B4CC9C /* Assets.xcassets */; };
 		D44C6F151E7D225700B4CC9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44C6F131E7D225700B4CC9C /* LaunchScreen.storyboard */; };
@@ -18,6 +17,8 @@
 		D44C6F231E7D234700B4CC9C /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F201E7D234700B4CC9C /* WebServiceHandler.swift */; };
 		D44C6F271E7D265500B4CC9C /* MusicInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F261E7D265500B4CC9C /* MusicInformation.swift */; };
 		D44C6F2B1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */; };
+		D44C6F2F1E7D2BF200B4CC9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F2E1E7D2BF200B4CC9C /* ViewController.swift */; };
+		D44C6F311E7D2C0100B4CC9C /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F301E7D2C0100B4CC9C /* MusicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,6 @@
 		B4F2BAECF13AF5E3EAEA58A3 /* Pods_CokeStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CokeStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44C6F071E7D225600B4CC9C /* CokeStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CokeStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44C6F0A1E7D225700B4CC9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D44C6F0C1E7D225700B4CC9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D44C6F0F1E7D225700B4CC9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D44C6F111E7D225700B4CC9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44C6F141E7D225700B4CC9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		D44C6F201E7D234700B4CC9C /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
 		D44C6F261E7D265500B4CC9C /* MusicInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInformation.swift; sourceTree = "<group>"; };
 		D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInformationBusinessLayer.swift; sourceTree = "<group>"; };
+		D44C6F2E1E7D2BF200B4CC9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D44C6F301E7D2C0100B4CC9C /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +81,11 @@
 		D44C6F091E7D225600B4CC9C /* CokeStudio */ = {
 			isa = PBXGroup;
 			children = (
+				D44C6F2C1E7D2BF200B4CC9C /* View Controller */,
 				D44C6F281E7D26EF00B4CC9C /* Business Layer */,
 				D44C6F241E7D23F400B4CC9C /* Model */,
 				D44C6F1C1E7D234700B4CC9C /* Utilities */,
 				D44C6F0A1E7D225700B4CC9C /* AppDelegate.swift */,
-				D44C6F0C1E7D225700B4CC9C /* ViewController.swift */,
 				D44C6F0E1E7D225700B4CC9C /* Main.storyboard */,
 				D44C6F111E7D225700B4CC9C /* Assets.xcassets */,
 				D44C6F131E7D225700B4CC9C /* LaunchScreen.storyboard */,
@@ -140,6 +142,23 @@
 				D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */,
 			);
 			path = "Music Information Business Layer";
+			sourceTree = "<group>";
+		};
+		D44C6F2C1E7D2BF200B4CC9C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F2D1E7D2BF200B4CC9C /* Music list view controller */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		D44C6F2D1E7D2BF200B4CC9C /* Music list view controller */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F2E1E7D2BF200B4CC9C /* ViewController.swift */,
+				D44C6F301E7D2C0100B4CC9C /* MusicTableViewCell.swift */,
+			);
+			path = "Music list view controller";
 			sourceTree = "<group>";
 		};
 		F23D752063DF29A07D535FC3 /* Pods */ = {
@@ -275,12 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44C6F221E7D234700B4CC9C /* Utility.swift in Sources */,
-				D44C6F0D1E7D225700B4CC9C /* ViewController.swift in Sources */,
 				D44C6F231E7D234700B4CC9C /* WebServiceHandler.swift in Sources */,
 				D44C6F0B1E7D225700B4CC9C /* AppDelegate.swift in Sources */,
 				D44C6F211E7D234700B4CC9C /* Constants.swift in Sources */,
 				D44C6F2B1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift in Sources */,
+				D44C6F2F1E7D2BF200B4CC9C /* ViewController.swift in Sources */,
 				D44C6F271E7D265500B4CC9C /* MusicInformation.swift in Sources */,
+				D44C6F311E7D2C0100B4CC9C /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
