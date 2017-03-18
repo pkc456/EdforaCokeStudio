@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A95BCF7BD624E9A97A9EA06 /* Pods_CokeStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F2BAECF13AF5E3EAEA58A3 /* Pods_CokeStudio.framework */; };
 		D44C6F0B1E7D225700B4CC9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F0A1E7D225700B4CC9C /* AppDelegate.swift */; };
 		D44C6F0D1E7D225700B4CC9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F0C1E7D225700B4CC9C /* ViewController.swift */; };
 		D44C6F101E7D225700B4CC9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44C6F0E1E7D225700B4CC9C /* Main.storyboard */; };
 		D44C6F121E7D225700B4CC9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44C6F111E7D225700B4CC9C /* Assets.xcassets */; };
 		D44C6F151E7D225700B4CC9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44C6F131E7D225700B4CC9C /* LaunchScreen.storyboard */; };
+		D44C6F211E7D234700B4CC9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F1D1E7D234700B4CC9C /* Constants.swift */; };
+		D44C6F221E7D234700B4CC9C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F1E1E7D234700B4CC9C /* Utility.swift */; };
+		D44C6F231E7D234700B4CC9C /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F201E7D234700B4CC9C /* WebServiceHandler.swift */; };
+		D44C6F271E7D265500B4CC9C /* MusicInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F261E7D265500B4CC9C /* MusicInformation.swift */; };
+		D44C6F2B1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		464DC32DC719EA8FBE22CCEA /* Pods-CokeStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CokeStudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-CokeStudio/Pods-CokeStudio.release.xcconfig"; sourceTree = "<group>"; };
+		A40658F3F62E754870F387FE /* Pods-CokeStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CokeStudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CokeStudio/Pods-CokeStudio.debug.xcconfig"; sourceTree = "<group>"; };
+		B4F2BAECF13AF5E3EAEA58A3 /* Pods_CokeStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CokeStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44C6F071E7D225600B4CC9C /* CokeStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CokeStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44C6F0A1E7D225700B4CC9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D44C6F0C1E7D225700B4CC9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		D44C6F111E7D225700B4CC9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44C6F141E7D225700B4CC9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D44C6F161E7D225700B4CC9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44C6F1D1E7D234700B4CC9C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D44C6F1E1E7D234700B4CC9C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D44C6F201E7D234700B4CC9C /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		D44C6F261E7D265500B4CC9C /* MusicInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInformation.swift; sourceTree = "<group>"; };
+		D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInformationBusinessLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A95BCF7BD624E9A97A9EA06 /* Pods_CokeStudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27FB1FE79451AE00F4C6F6D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4F2BAECF13AF5E3EAEA58A3 /* Pods_CokeStudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D44C6EFE1E7D225600B4CC9C = {
 			isa = PBXGroup;
 			children = (
 				D44C6F091E7D225600B4CC9C /* CokeStudio */,
 				D44C6F081E7D225600B4CC9C /* Products */,
+				F23D752063DF29A07D535FC3 /* Pods */,
+				27FB1FE79451AE00F4C6F6D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +79,9 @@
 		D44C6F091E7D225600B4CC9C /* CokeStudio */ = {
 			isa = PBXGroup;
 			children = (
+				D44C6F281E7D26EF00B4CC9C /* Business Layer */,
+				D44C6F241E7D23F400B4CC9C /* Model */,
+				D44C6F1C1E7D234700B4CC9C /* Utilities */,
 				D44C6F0A1E7D225700B4CC9C /* AppDelegate.swift */,
 				D44C6F0C1E7D225700B4CC9C /* ViewController.swift */,
 				D44C6F0E1E7D225700B4CC9C /* Main.storyboard */,
@@ -64,6 +92,65 @@
 			path = CokeStudio;
 			sourceTree = "<group>";
 		};
+		D44C6F1C1E7D234700B4CC9C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F1D1E7D234700B4CC9C /* Constants.swift */,
+				D44C6F1E1E7D234700B4CC9C /* Utility.swift */,
+				D44C6F1F1E7D234700B4CC9C /* WebService Handler */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D44C6F1F1E7D234700B4CC9C /* WebService Handler */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F201E7D234700B4CC9C /* WebServiceHandler.swift */,
+			);
+			path = "WebService Handler";
+			sourceTree = "<group>";
+		};
+		D44C6F241E7D23F400B4CC9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F251E7D23F400B4CC9C /* Music information */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D44C6F251E7D23F400B4CC9C /* Music information */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F261E7D265500B4CC9C /* MusicInformation.swift */,
+			);
+			path = "Music information";
+			sourceTree = "<group>";
+		};
+		D44C6F281E7D26EF00B4CC9C /* Business Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F291E7D26EF00B4CC9C /* Music Information Business Layer */,
+			);
+			path = "Business Layer";
+			sourceTree = "<group>";
+		};
+		D44C6F291E7D26EF00B4CC9C /* Music Information Business Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D44C6F2A1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift */,
+			);
+			path = "Music Information Business Layer";
+			sourceTree = "<group>";
+		};
+		F23D752063DF29A07D535FC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A40658F3F62E754870F387FE /* Pods-CokeStudio.debug.xcconfig */,
+				464DC32DC719EA8FBE22CCEA /* Pods-CokeStudio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D44C6F191E7D225700B4CC9C /* Build configuration list for PBXNativeTarget "CokeStudio" */;
 			buildPhases = (
+				F54F29E16D20AF45B45CAD43 /* [CP] Check Pods Manifest.lock */,
 				D44C6F031E7D225600B4CC9C /* Sources */,
 				D44C6F041E7D225600B4CC9C /* Frameworks */,
 				D44C6F051E7D225600B4CC9C /* Resources */,
+				16D6058EBC439D1743F56BF4 /* [CP] Embed Pods Frameworks */,
+				298576D84686DE5564A0BC08 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +221,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16D6058EBC439D1743F56BF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CokeStudio/Pods-CokeStudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		298576D84686DE5564A0BC08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CokeStudio/Pods-CokeStudio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F54F29E16D20AF45B45CAD43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D44C6F031E7D225600B4CC9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44C6F221E7D234700B4CC9C /* Utility.swift in Sources */,
 				D44C6F0D1E7D225700B4CC9C /* ViewController.swift in Sources */,
+				D44C6F231E7D234700B4CC9C /* WebServiceHandler.swift in Sources */,
 				D44C6F0B1E7D225700B4CC9C /* AppDelegate.swift in Sources */,
+				D44C6F211E7D234700B4CC9C /* Constants.swift in Sources */,
+				D44C6F2B1E7D270000B4CC9C /* MusicInformationBusinessLayer.swift in Sources */,
+				D44C6F271E7D265500B4CC9C /* MusicInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +399,11 @@
 		};
 		D44C6F1A1E7D225700B4CC9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40658F3F62E754870F387FE /* Pods-CokeStudio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CokeStudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.CokeStudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -268,9 +413,11 @@
 		};
 		D44C6F1B1E7D225700B4CC9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 464DC32DC719EA8FBE22CCEA /* Pods-CokeStudio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CokeStudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.programmingcrew.CokeStudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +444,7 @@
 				D44C6F1B1E7D225700B4CC9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

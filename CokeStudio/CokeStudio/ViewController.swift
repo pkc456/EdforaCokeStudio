@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        fetchMusicData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+//MARK: User defined methods
+    private func fetchMusicData(){
+        WebServiceHandler.sharedInstance.getMusicInformation(successBlock: { (result) in
+            print(result)
+        }) { (error) in
+            self.showAlert(title: "Error", message: error.localizedDescription)
+        }
+        
+    }
 }
 
